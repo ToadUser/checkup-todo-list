@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Регистрация</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Test</title>
 </head>
 <body>
-    <div class="container">
-         <section class="form_registration">
-            <form action="">
-                <div>
-                  <label for="form_registration-login">Login</label>
-                  <input id="form_registration-login" placeholder="login" type="text">
-                </div>
-                <div>
-                  <label for="form_registration-password">Password</label>
-                  <input id="form_registration-password" placeholder="password" type="text">
-                </div>
-                <button type="">Sing In</button>
-            </form>
-         </section>
-         <section class="form_authorisation">
-            <form action="">
-                <div>
-                  <label for="form_authorisation-login">Login</label>
-                  <input id="form_authorisation-login" placeholder="login" type="text">
-                </div>
-                <div>
-                  <label for="form_authorisation-password">Password</label>
-                  <input id="form_authorisation-password" placeholder="password" type="text">
-                </div>
-                <button type="">Login</button>
-            </form>
-         </section>
-         <ul>
-            <li>
-                
-            </li>
-         </ul>
-    </div>
-=======
-
-    <title>ветка</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <main>
-        осн. контетнт сайта
-    </main>
-
->>>>>>> b8136c05fd09a817ebaacd88d83708f85de6607a
+  <header>AUTORIZATION</header>
+  <main>
+    <section class="sign" id="login">
+      <form action="#" class="forms">
+        <div>
+          <label for="email">e-mail</label>
+          <input type="email" placeholder="your e-mail">
+        </div>
+        <div>
+          <label for="password">password</label>
+          <input type="password" placeholder="your password">
+        </div>
+        <div class="add-link">
+          <a id="reg" class="link">registration</a>
+          <a id="fogot" class="link">forgot your password?</a>
+        </div>
+        <div>
+          <button type="submit">Log in</button>
+        </div>
+      </form>
+    </section>
+    <section class="sign hidden" id="register">
+      <form action="#" class="forms">
+        <div>
+          <label for="email">e-mail</label>
+          <input type="email" placeholder="your e-mail">
+        </div>
+        <div>
+          <label for="password">password</label>
+          <input type="password" placeholder="your password">
+        </div>
+        <div>
+          <label for="tel">Phone number</label>
+          <input type="tel" placeholder="your phone number">
+        </div>
+        <div class="add-link">
+          <a id="btnLogin" class="link">Log in</a>
+          <a id="fogotReg" class="link">forgot your password?</a>
+        </div>
+        <div>
+          <button type="submit">Log in</button>
+        </div>
+      </form>
+    </section>
+    <section class="sign hidden" id="fgt">
+      <form action="#" class="forms">
+        <div>
+          <label for="tel">Phone number</label>
+          <input type="tel" placeholder="your phone number">
+        </div>
+        <div>
+          <label for="tel">SMS code</label>
+          <input type="tel" placeholder="enter the code">
+        </div>
+        <div class="add-link">
+          <a id="btnLoginFgt" class="link">Log in</a>
+          <a id="regFgt" class="link">register</a>
+        </div>
+        <div>
+          <button type="submit">recover</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="app.js"></script>
 </body>
 </html>
