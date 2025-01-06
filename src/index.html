@@ -3,14 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ветка</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Страница регистрации/авторизации</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        осн. контетнт сайта
-    </main>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <form id="register-form">
+            <label for="username">Имя пользователя</label>
+            <input type="text" id="username" name="username" required>
 
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <h1>Авторизация</h1>
+        <form id="login-form">
+            <label for="login-username">Имя пользователя</label>
+            <input type="text" id="login-username" name="login-username" required>
+
+            <label for="login-password">Пароль</label>
+            <input type="password" id="login-password" name="login-password" required>
+            <button type="submit">Войти</button>
+        </form>
+
+        <div class="task-container">
+            <h2>Ваши задачи</h2>
+            <form id="task-form">
+                <label for="task-input">Добавить новую задачу</label>
+                <input type="text" id="task-input" name="task-input" required>
+                <button type="submit">Добавить</button>
+            </form>
+            <ul id="task-list">
+                <!-- Реализация появления задач не изучена -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- <script src="app.js"></script> -->
 </body>
 </html>

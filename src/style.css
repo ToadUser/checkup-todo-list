@@ -1,3 +1,61 @@
-main{
-    background-color: red;
+body {
+  background-color: #2E2B25;
+  color: #F5F5DC;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #5B3A29;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+h1, h2 {
+  color: #FFD700;
+  text-align: center;
+  
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #2E2B25;
+  border-radius: 5px;
+  background-color: #F5F5DC;
+  box-sizing: border-box;
+  
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: #FFD700;
+  color: #2E2B25;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  
+}
+
+
+button:hover {
+  background-color: #FFC107;
+  
 }
