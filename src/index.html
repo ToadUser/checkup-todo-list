@@ -1,77 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница регистрации/авторизации</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>AUTORIZATION</header>
-  <main>
-    <section class="sign" id="login">
-      <form action="#" class="forms">
-        <div>
-          <label for="email">e-mail</label>
-          <input type="email" placeholder="your e-mail">
+    <div class="container">
+        <h1>Регистрация</h1>
+        <form id="register-form">
+            <label for="username">Имя пользователя</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <h1>Авторизация</h1>
+        <form id="login-form">
+            <label for="login-username">Имя пользователя</label>
+            <input type="text" id="login-username" name="login-username" required>
+
+            <label for="login-password">Пароль</label>
+            <input type="password" id="login-password" name="login-password" required>
+            <button type="submit">Войти</button>
+        </form>
+
+        <div class="task-container">
+            <h2>Ваши задачи</h2>
+            <form id="task-form">
+                <label for="task-input">Добавить новую задачу</label>
+                <input type="text" id="task-input" name="task-input" required>
+                <button type="submit">Добавить</button>
+            </form>
+            <ul id="task-list">
+                <!-- Реализация появления задач не изучена -->
+            </ul>
         </div>
-        <div>
-          <label for="password">password</label>
-          <input type="password" placeholder="your password">
-        </div>
-        <div class="add-link">
-          <a id="reg" class="link">registration</a>
-          <a id="fogot" class="link">forgot your password?</a>
-        </div>
-        <div>
-          <button type="submit">Log in</button>
-        </div>
-      </form>
-    </section>
-    <section class="sign hidden" id="register">
-      <form action="#" class="forms">
-        <div>
-          <label for="email">e-mail</label>
-          <input type="email" placeholder="your e-mail">
-        </div>
-        <div>
-          <label for="password">password</label>
-          <input type="password" placeholder="your password">
-        </div>
-        <div>
-          <label for="tel">Phone number</label>
-          <input type="tel" placeholder="your phone number">
-        </div>
-        <div class="add-link">
-          <a id="btnLogin" class="link">Log in</a>
-          <a id="fogotReg" class="link">forgot your password?</a>
-        </div>
-        <div>
-          <button type="submit">Log in</button>
-        </div>
-      </form>
-    </section>
-    <section class="sign hidden" id="fgt">
-      <form action="#" class="forms">
-        <div>
-          <label for="tel">Phone number</label>
-          <input type="tel" placeholder="your phone number">
-        </div>
-        <div>
-          <label for="tel">SMS code</label>
-          <input type="tel" placeholder="enter the code">
-        </div>
-        <div class="add-link">
-          <a id="btnLoginFgt" class="link">Log in</a>
-          <a id="regFgt" class="link">register</a>
-        </div>
-        <div>
-          <button type="submit">recover</button>
-        </div>
-      </form>
-    </section>
-  </main>
-  <footer></footer>
-  <script src="app.js"></script>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
